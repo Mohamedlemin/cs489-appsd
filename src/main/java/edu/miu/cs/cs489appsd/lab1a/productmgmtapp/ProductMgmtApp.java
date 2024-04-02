@@ -38,7 +38,7 @@ public class ProductMgmtApp {
 		System.out.println("XML-formatted list of all Products:");
 		System.out.println("<Products>");
 		for (Product product : products) {
-			System.out.printf("  <Product>\n    <productId>%s</productId>\n    <productName>%s</productName>\n    <dateSupplied>%s</dateSupplied>\n    <quantityInStock>%d</quantityInStock>\n    <unitPrice>%.2f</unitPrice>\n  </Product>\n",
+			System.out.printf("  <Product>\n  productId='%s' productName= '%s'  dateSupplied='%s'  quantityInStock = '%d'    unitPrice ='%.2f'  </Product>\n",
 					product.getProductId(), product.getProductName(), product.getDateSupplied(), product.getQuantityInStock(), product.getUnitPrice());
 		}
 		System.out.println("</Products>");
