@@ -25,9 +25,9 @@ public class PensionApp {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		try {
 			employees.add(new Employee(1, "Daniel", "Agar", sdf.parse("2018-01-17"), 105945.50,new PensionPlan("EX1089",sdf.parse("2023-01-17"),100)));
-			employees.add(new Employee(2, "Benard", "Shaw", sdf.parse("2019-04-03"), 197750.00,new PensionPlan()));
+			employees.add(new Employee(2, "Benard", "Shaw", sdf.parse("2019-04-03"), 197750.00,null));
 			employees.add(new Employee(3, "Carly", "Agar", sdf.parse("2014-05-16"), 842000.75,new PensionPlan("SM2307",sdf.parse("2019-11-04"),1555.50)));
-			employees.add(new Employee(4, "Wesley", "Schneider", sdf.parse("2019-05-02"), 74500.00,new PensionPlan()));
+			employees.add(new Employee(4, "Wesley", "Schneider", sdf.parse("2019-05-02"), 74500.00,null));
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
